@@ -23,7 +23,7 @@ pipeline {
        stage('Deploy Code') {
 	   when
 	   {
-	   branch "feature"
+	   branch "master"
 	   	   }
           steps {
                sh "mvn tomcat7:deploy"
